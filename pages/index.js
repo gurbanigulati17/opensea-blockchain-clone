@@ -45,6 +45,7 @@ export default function Home() {
   }, [address])
 
   return (
+    <div className="overflow-hidden">
     <div className={style.wrapper}>
       <Toaster position="top-center" reverseOrder={false} />
       {address ? (
@@ -67,5 +68,6 @@ export default function Home() {
         </div>
       )}
     </div>
+   </div> 
   )
 }
